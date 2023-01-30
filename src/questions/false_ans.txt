@@ -1,0 +1,75 @@
+Data and information are essentially the same thing.
+Data is the result of processing raw facts to reveal its meaning.
+When data are entered into a form and saved, they are placed in the underlying database as knowledge.
+Database programming languages receive all application requests and translate them into the complex operations required to fulfill those requests.
+The DBMS reveals much of the database’s internal complexity to the application programs and users.
+One disadvantage of the DBMS is that it increases the risk of data security breaches.
+An operational database is sometimes referred to as an enterprise database.
+Corporations use only structured data.
+Field refers to a collection of related records.
+Structural dependence exists when it is possible to make changes in the file structure without affecting the application program’s ability to access the data.
+Data anomaly is defined as the condition in which all of the data in the database are consistent with the real-world events and conditions.
+An advantage of database systems is that you needn't perform frequent updates and apply latest patches.
+One advantage of a database system over previous data management approaches is that the database system is considerably less complex.
+An implementation-ready data model needn't necessarily contain enforceable rules to guarantee the integrity of the data.
+Even when a good database blueprint is available, an applications programmer’s view of the data should match that of the manager and the end user.
+Database designers determine the data and information that yield the required understanding of the entire business.
+Business rules apply to businesses and government groups, but not to other types of organizations such as religious groups or research laboratories.
+A disadvantage of the relational database management system (RDBMS) is its inability to hide the complexities of the relational model from the user.
+In an SQL-based relational database, each table is dependent on every other table.
+In Chen notation, entities and relationships have to be oriented horizontally; not vertically.
+The external model is the representation of the database as “seen” by the DBMS.
+The hierarchical model is software-independent
+The relational model is hardware-dependent and software-independent.
+The order of the rows and columns is important to the DBMS.
+Character data can contain any character or symbol intended for mathematical manipulation.
+The row’s range of permissible values is known as its domain.
+The idea of determination is unique to the database environment.
+Only a single attribute, not multiple attributes, can define functional dependence.
+The SELECT operator yields a vertical subset of a table.
+In a natural join, the column on which the join was made occurs twice in the new table.
+The one-to-many (1:M) relationship is easily implemented in the relational model by putting the foreign key of the “1” side in the table of the “many” side as a primary key.
+The entity relationship model (ERM) is dependent on the database type.
+The Crow’s Foot notation is less implementation-oriented than the Chen notation.
+Software vendors have adopted the Chen representation because of its compact representation.
+The Crow's Foot notation easily identifies multivalued attributes.
+Composite attributes make it easier to facilitate detailed queries.
+In Chen notation, there is no way to represent cardinality.
+In implementation terms, an entity is existence-dependent if it has a mandatory primary key.
+A weak relationship exists if the primary key of the related entity contains at least one primary key component of the parent entity.
+Relationships between entities always operate in one direction.
+The existence of a mandatory relationship indicates that the minimum cardinality is 0 or 1 for the mandatory entity.
+Referential integrity and participation are both bidirectional, meaning that they must be addressed in both directions along a relationship.
+Within a specialization hierarchy, a supertype can exist only within the context of a subtype.
+A subtype contains attributes that are common to all of its supertypes.
+Entity subtypes do not inherit the relationships in which the supertype entity participates.
+In specialization hierarchies with multiple levels of supertype and subtypes, a lower-level subtype can inherit only a few of the attributes and relationships from its upper-level supertypes.
+The property of a subtype discriminator enables an entity supertype to inherit the attributes and relationships of the subtype.
+Disjoint subtypes are subtypes that contain nonunique subsets of the supertype entity set.
+Overlapping subtypes are subtypes that contain a unique subset of the supertype entity set.
+The function of the primary key is to describe an entity.
+To model time-variant data, one must create a new entity in an M:N relationship with the original entity.
+Normalization is a process that is used for changing attributes to entities.
+A dependency of one nonprime attribute on another nonprime attribute is a partial dependency.
+Dependencies that are based on only a part of a composite primary key are called transitive dependencies.
+Data stored at their highest level of granularity are said to be atomic data.
+A table is in BCNF if every determinant in the table is a foreign key.
+Normalization purity is often easy to sustain in the modern database environment.
+SQL is considered difficult to learn; its command set has a vocabulary of more than 300 words.
+The COMMIT command does not permanently save all changes. In order to do that, you must use SAVE.
+All SQL commands must be issued on a single line.
+An alias cannot be used when a table is required to be joined to itself in a recursive query.
+Oracle users can use the Access QBE (query by example) query generator.
+Comparison operators cannot be used to place restrictions on character-based attributes.
+You cannot insert a row containing a null attribute value using SQL.
+Most SQL implementations yield case-insensitive searches.
+SQL supports the conditional execution of procedures (IF-THEN-ELSE statements) that are typically supported by a programming language.
+A persistent stored module is stored and executed on the database client machine.
+Every PL/SQL block must be given a name.
+Automating business procedures and automatically maintaining data integrity and consistency are trivial in a modern business environment.
+Triggers can only be used to update table values.
+A row-level trigger is assumed if we omit the FOR EACH ROW keywords and a statement-level trigger required the use of the FOR EACH ROW keyword.
+MySQL allows multiple triggering conditions per trigger.
+BEFORE means before the changes are made in memory but after the changes are permanently saved to disk.
+Stored procedures must have at least one argument.
+An explicit cursor must return two or more rows.

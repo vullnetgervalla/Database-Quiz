@@ -1,0 +1,85 @@
+Data processing can be as simple as organizing data to reveal patterns.
+Data constitute the building blocks of information.
+Metadata describe the data characteristics and the set of relationships that links the data found within the database.
+The only way to access the data in a database is through the DBMS.
+A data warehouse can store data derived from many sources.
+Structure is based on the type of processing to be performed on the data.
+One disadvantage of a database system over previous data management approaches is increased costs.
+A data model is usually graphical.
+An implementation-ready data model should contain a description of the data structure that will store the end-user data.
+Within the database environment, a data model represents data structures with the purpose of supporting a specific problem domain.
+In the context of data models, an entity is a person, place, thing, or event about which data will be collected and stored.
+Business rules must be rendered in writing.
+In an SQL-based relational database, rows in different tables are related based on common values in common attributes.
+Each row in the relational table is known as an entity instance or entity occurrence in the ER model.
+M:N relationships are not appropriate in a relational model.
+Today, most relational database products can be classified as object/relational.
+The network model has structural level dependence.
+The practical significance of taking the logical view of a database is that it serves as a reminder of the simple file concept of data storage.
+You can think of a table as a persistent representation of a logical relation.
+Each table in a relational database must have a primary key.
+If the attribute (B) is functionally dependent on a composite key (A) but not on any subset of that composite key, the attribute (B) is fully functionally dependent on (A).
+A null is created when you press the Enter key or the Tab key to move to the next entry without making a prior entry of any kind.
+Depending on the sophistication of the application development software, nulls can create problems when functions such as COUNT, AVERAGE, and SUM are used.
+RDBMSs enforce integrity rules automatically.
+Relational algebra defines the theoretical way of manipulating table contents using relational operators.
+The DIFFERENCE operator subtracts one table from the other.
+The DIVIDE operation uses one single-column table (e.g., column “a”) as the divisor and one two-column table (e.g., columns “a” and “b”) as the dividend.
+A data dictionary is sometimes described as “the database designer’s database” because it records the design decisions about tables and their structures.
+As rare as 1:1 relationships should be, certain conditions absolutely require their use.
+An entity in the entity relationship model corresponds to a table in the relational environment.
+In the entity relationship model, a table row corresponds to an entity instance.
+In the Chen and Crow’s Foot notations, an entity is represented with a rectangle containing the entity’s name.
+In the original Chen notation, each attribute is represented by an oval with the attribute name connected to an entity rectangle with a line.
+A composite identifier is a primary key composed of more than one attribute.
+Connectivities and cardinalities are established by concise statements known as business rules.
+A weak entity has a primary key that is partially or totally derived from the parent entity in the relationship.
+In a 1:M relationship, to avoid the possibility of referential integrity errors, the data of the "1" side must be loaded first.
+To implement a small database, a database designer must know the "1" and the "M" sides of each relationship and whether the relationships are mandatory or optional.
+The entity supertype contains common characteristics, and the entity subtypes each contain their own unique characteristics.
+Entity supertypes and subtypes are organized in a specialization hierarchy.
+The relationships depicted within the specialization hierarchy are sometimes described in terms of “is-a” relationships.
+One important inheritance characteristic is that all entity subtypes inherit their primary key attribute from their supertype.
+At the implementation level, the supertype and its subtype(s) depicted in the specialization hierarchy maintain a 1:1 relationship.
+An entity supertype can have disjoint or overlapping entity subtypes.
+Implementing overlapping subtypes requires the use of one discriminator attribute for each subtype.
+The completeness constraint can be partial or total.
+Specialization is the top-down process of identifying lower-level, more specific entity subtypes from a higher-level entity supertype.
+An entity cluster is a "virtual" entity type used to represent multiple entities and relationships in the ERD.
+A design trap occurs when a relationship is improperly or incompletely identified and is therefore represented in a way that is not consistent with the real world.
+Normalization works through a series of stages called normal forms.
+In order to meet performance requirements, portions of the database design may need to be occasionally denormalized.
+Denormalization produces a lower normal form.
+The objective of normalization is to ensure that each table conforms to the concept of well-formed relations.
+Relational models view data as part of a table or collection of tables in which all key values must be identified.
+Repeating groups must be eliminated by ensuring that each row defines a single entity.
+Dependency diagrams are very helpful in getting a bird’s-eye view of all the relationships among a table’s attributes.
+All relational tables satisfy the 1NF requirements.
+In the context of partial dependencies, data redundancies occur because every row entry requires duplication of data.
+Since a partial dependency can exist only if a table's primary key is composed of several attributes, if a table in 1NF has a single-attribute primary key, then the table is automatically in 2NF.
+It is possible for a table in 2NF to exhibit transitive dependency, where the primary key may rely on one or more nonprime attributes to functionally determine other nonprime attributes.
+A table is in fourth normal form if it is in third normal form and has no independent multivalued dependencies.
+Normalization represents a micro view of the entities within the ERD.
+The combination of normalization and ER modeling yields a useful ERD, whose entities can be translated into appropriate table structures.
+A database language enables the user to perform complex queries designed to transform the raw data into useful information.
+The ANSI SQL standards are also accepted by the ISO.
+Although SQL commands can be grouped together on a single line, complex command sequences are best shown on separate lines, with space between the SQL command and the command’s components.
+You can select partial table contents by naming the desired fields and by placing restrictions on the rows to be included in the output.
+String comparisons are made from left to right.
+Date procedures are often more software-specific than other SQL procedures.
+SQL allows the use of logical restrictions on its inquiries such as OR, AND, and NOT.
+ANSI-standard SQL allows the use of special operators in conjunction with the WHERE clause.
+The conditional LIKE must be used in conjunction with wildcard characters.
+Some RDBMSs, such as Microsoft Access, automatically make the necessary conversions to eliminate case sensitivity.
+The COUNT function is designed to tally the number of non-null "values" of an attribute, and is often used in conjunction with the DISTINCT clause.
+Numeric functions take one numeric parameter and return one value.
+A view is a virtual table based on a SELECT query.
+A sequence is not associated with a table and can be dropped from a database with a DROP SEQUENCE command.
+To remedy the lack of procedural functionality in SQL, and to provide some standardization within the many vendor offerings, the SQL-99 standard defined the use of persistent stored modules.
+In Oracle, you can use the SQL*Plus command SHOW ERRORS to help you diagnose errors found in PL/SQL blocks.
+The most useful feature of PL/SQL blocks is that they let a designer create code that can be named, stored, and executed by the DBMS.
+The DECLARE section in the trigger is used to declare any variables used inside the trigger code.
+A trigger is procedural SQL code that is automatically invoked by the RDBMS upon the occurrence of a given data manipulation event.
+A statement-level trigger is assumed if a designer omits the FOR EACH ROW keywords.
+Just like database triggers, stored procedures are stored in the database.
+One of the major advantages of stored procedures is that they can be used to encapsulate and represent business transactions.
