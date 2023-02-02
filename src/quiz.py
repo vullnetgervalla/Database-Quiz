@@ -23,6 +23,7 @@ questions = {**false_map, **true_map}
 questions_list = random.sample(list(questions.keys()), len(questions.keys()))
 question_index = 0
 
+
 def get_question(flag):
     global questions_list
     global question_index
@@ -32,8 +33,8 @@ def get_question(flag):
 
     elif flag == 1:
         question_index += 1
-        if(question_index == len(questions_list)):
-            question_index=0
+        if (question_index == len(questions_list)):
+            question_index = 0
             print("All questions answered!")
         question = questions_list[question_index]
 
@@ -45,6 +46,7 @@ def get_question(flag):
         question = questions_list[question_index]
 
     return question
+
 
 question = get_question(0)
 
@@ -67,6 +69,7 @@ def next_question(result_label):
         result_label.config(text="")
     return on_click
 
+
 def previous_question(result_label):
     def on_click():
         global question
@@ -80,9 +83,12 @@ root = tk.Tk()
 root.geometry("650x250")
 root.title("Quiz")
 
+question_frame = tk.Frame(root, width=650, height=120)
+question_frame.pack_propagate(False)
+question_frame.pack(pady=10)
 
-question_label = tk.Label(root, text=question, font=("TkDefaultFont", 16),wraplength=600)
-question_label.pack(pady=10)
+question_label = tk.Label(question_frame, text=question, font=("TkDefaultFont", 16), wraplength=600)
+question_label.pack()
 
 answer_frame = tk.Frame(root)
 answer_frame.pack(pady=10)
@@ -91,16 +97,16 @@ result_label = tk.Label(root, text="", font=("TkDefaultFont", 14))
 result_label.pack()
 
 previous_button = tk.Button(answer_frame, text="Previous", width=10, command=previous_question(result_label))
-previous_button.grid(row=0, column=0, padx=10, pady=20)
+previous_button.grid(row=0, column=0, padx=10, pady=10)
 
-true_button = tk.Button(answer_frame, text="True", width=10, command=check_answer("true",result_label))
-true_button.grid(row=0, column=1, padx=5)
+true_button = tk.Button(answer_frame, text="True", width=10, command=check_answer("true", result_label))
+true_button.grid(row=0, column=1, padx=5, pady=10)
 
-false_button = tk.Button(answer_frame, text="False", width=10, command=check_answer("false",result_label))
-false_button.grid(row=0, column=2, padx=5)
+false_button = tk.Button(answer_frame, text="False", width=10, command=check_answer("false", result_label))
+false_button.grid(row=0, column=2, padx=5, pady=10)
 
 next_button = tk.Button(answer_frame, text="Next", width=10, command=next_question(result_label))
-next_button.grid(row=0, column=3, padx=10, pady=20)
+next_button.grid(row=0, column=3, padx=10, pady=10)
 
 result_label = tk.Label(root, text="", font=("TkDefaultFont", 16))
 result_label.pack()
