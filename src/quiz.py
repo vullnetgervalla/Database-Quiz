@@ -1,15 +1,20 @@
 import tkinter as tk
 import random
+import os
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+falseQuestionsPath = os.path.join(dir_path, 'questions/false_ans.txt')
+trueQuestionsPath = os.path.join(dir_path, 'questions/true_ans.txt')
 
 false_list = []
-with open('./src/questions/false_ans.txt', encoding="utf8") as f:
+with open(falseQuestionsPath, encoding="utf8") as f:
     line = f.readline()
     while line:
         false_list.append(line)
         line = f.readline()
 
 true_list = []
-with open('./src/questions/true_ans.txt', encoding="utf8") as f:
+with open(trueQuestionsPath, encoding="utf8") as f:
     line = f.readline()
     while line:
         true_list.append(line)
